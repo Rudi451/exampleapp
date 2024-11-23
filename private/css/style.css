@@ -1,0 +1,223 @@
+/* .modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+} */
+:root {
+	--swiss-coffee: #d3cfcd;
+	--bunker: #101b1b;
+	--nevada: #586e70;
+	--kabul: #56453f;
+	--coral-tree: #a2617b;
+	--granny-smith: #7d969a;
+	--plantation: #234246;
+	--kimberly: #74799d;
+	--san-juan: #2a4f61;
+	--elephant: #102f3e;
+
+	--kengoo: #c46ae7;
+}
+body {
+	height: 75vh;
+	background-color: rgb(228, 228, 228);
+}
+form {
+	width: 400px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+}
+.form-grid {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-gap: 10px;
+}
+
+.form-grid label {
+	text-align: left;
+}
+
+.form-grid input {
+	width: 100%;
+	padding: 5px;
+}
+.hidden {
+	display: none;
+}
+#dashboard-area {
+	/* background-color: aqua; */
+	/* height: 75vh; */
+}
+#course-list {
+	background-color: grey;
+	max-height: 70vh;
+	overflow: scroll;
+}
+.fixed-width2 {
+	background-color: aquamarine;
+}
+
+.full-width {
+	width: 100% !important;
+}
+
+body {
+	height: fit-content;
+
+	background-image: linear-gradient(
+		to top left,
+		var(--elephant),
+		var(--bunker)
+	);
+	/* background-color: var(--elephant); */
+}
+.container {
+	/* height: 95vh; */
+	background-color: var(--nevada);
+
+	box-shadow: 0px 0px 10px var(--kengoo);
+}
+.card-title {
+	color: #d3cfcd;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: bolder;
+	font-size: 1em;
+	text-align: center;
+}
+
+#logo {
+	height: 2em;
+}
+
+.circleUser {
+	background-color: rgb(16, 225, 16);
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+	padding: 0.2em;
+}
+#username {
+	padding: 0.2em;
+	font-size: larger;
+	cursor: pointer;
+}
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+/* Animation for sliding in from the top on page load */
+@keyframes slideInFromTop {
+	0% {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+/* Slide-in animation on page load */
+#logoutBtn {
+	/* display: inline-block; */
+	display: none;
+	position: absolute;
+	animation: slideInFromTop 0.5s ease-out;
+	transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect with transitions (not an animation) */
+#logoutBtn:hover {
+	transform: scale(1.1); /* Slightly enlarge the button */
+	background-color: #ff6b6b; /* Change background color */
+}
+
+.nav-link {
+	background-color: var(--nevada);
+	color: #faf6f5;
+	text-decoration: none;
+	font-weight: bolder;
+	/* padding-left: 1em !important; */
+}
+.nav-link:hover {
+	background-color: var(--plantation);
+	color: #faf6f5;
+	text-decoration: none;
+	font-weight: bolder;
+}
+.tab-pane {
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	border-radius: 0px 0px 8px 8px;
+	height: 90%;
+}
+#dashboard-area {
+	min-height: 60vh;
+	max-height: 75vh;
+}
+.start-grid > div {
+	/* padding: 5%; */
+	/* margin: 1%; */
+	/* background-color: #d3cfcd; */
+}
+
+.card > .card-img-top {
+	width: 100%;
+	height: 1rem;
+	background-image: linear-gradient(
+		to top right,
+		var(--kengoo),
+		var(--swiss-coffee)
+	);
+}
+.dashboard-card {
+	box-shadow: 3px 3px 2px var(--plantation);
+	cursor: pointer;
+}
+.dashboard-card:hover {
+	background-color: var(--granny-smith) !important;
+}
+.dashboard-card-list {
+	/* background-color: #c46ae7; */
+	/* border: 2px solid rgb(250, 100, 0); */
+	color: rgb(154, 96, 57);
+	border-radius: 9px;
+	margin: 5px;
+}
+.dashboard-card-list:hover {
+	color: white;
+}
+
+.tooltip {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 5px;
+	border-radius: 3px;
+	font-size: 12px;
+	z-index: 1000;
+}
+
+.fc-daygrid-day-frame {
+	height: 30px; /* Standardhöhe für die Zellen */
+}
+
+.fc .fc-scroller-harness,
+.fc .fc-daygrid-body {
+	max-height: 400px; /* Maximale Höhe des Kalenderkörpers, um zu verhindern, dass er zu groß wird */
+}

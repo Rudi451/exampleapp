@@ -1,0 +1,41 @@
+/* CSS HEX */
+ --swiss-coffee: #d3cfcd;
+--bunker: #101b1b;
+--nevada: #586e70;
+--kabul: #56453f;
+--coral-tree: #a2617b;
+--granny-smith: #7d969a;
+--plantation: #234246;
+--kimberly: #74799d;
+--san-juan: #2a4f61;
+--elephant: #102f3e;
+
+--kengoo: #c46ae7;
+
+
+/* SCSS HEX */
+$swiss-coffee: #d3cfcd;
+$bunker: #101b1b;
+$nevada: #586e70;
+$kabul: #56453f;
+$coral-tree: #a2617b;
+$granny-smith: #7d969a;
+$plantation: #234246;
+$kimberly: #74799d;
+$san-juan: #2a4f61;
+$elephant: #102f3e;
+
+
+/* SCSS RGB */
+--swiss-coffee: rgba(211,207,205,1);
+--bunker: rgba(16,27,27,1);
+--nevada: rgba(88,110,112,1);
+--kabul: rgba(86,69,63,1);
+--coral-tree: rgba(162,97,123,1);
+--granny-smith: rgba(125,150,154,1);
+--plantation: rgba(35,66,70,1);
+--kimberly: rgba(116,121,157,1);
+--san-juan: rgba(42,79,97,1);
+--elephant: rgba(16,47,62,1);
+
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Dashboard</title>
+	</head>
+	<body class="align-middled-flex align-items-center py-4">
+		<div class="container card d-flex align-items-center py-4">
+			<h1 class="card-title">
+				<img id="logo" src="./images/logo.png" alt="logo" />
+				<span>
+					FITNESS FINDER APP <br />
+					Dashboard</span
+				>
+			</h1>
+			<div style="width: 100%" class="d-flex justify-content-start">
+				<p
+					id="username"
+					class="badge text-bg-info d-flex justify-content-between noselect"></p>
+			</div>
+			<div class="w-100">
+				<span id="logoutBtn" class="badge text-bg-danger btn text-start p-4">
+					Ausloggen [-></span
+				>
+			</div>
+			<span id="error-message"></span>
+			<div style="width: 100%"></div>
+			<div class="bd-example-snippet bd-code-snippet container-fluid">
+				<ul
+					class="nav nav-tabs d-flex justify-content-end"
+					id="myTab"
+					role="tablist">
+					<li class="nav-item" role="presentation">
+						<button
+							class="nav-link active"
+							id="home-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#home"
+							type="button"
+							role="tab"
+							aria-controls="home"
+							aria-selected="true">
+							Start
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button
+							class="nav-link"
+							id="nav-finder-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#nav-finder"
+							type="button"
+							role="tab"
+							aria-controls="nav-finder"
+							aria-selected="false">
+							Fitness Finden
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button
+							class="nav-link"
+							id="myfitness-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#myfitness"
+							type="button"
+							role="tab"
+							aria-controls="myfitness"
+							aria-selected="false">
+							Mein Fitness
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button
+							class="nav-link"
+							id="profil-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#profil"
+							type="button"
+							role="tab"
+							aria-controls="profil"
+							aria-selected="false">
+							Profil
+						</button>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div
+						class="tab-pane fade show active"
+						id="home"
+						role="tabpanel"
+						aria-labelledby="home-tab">
+						<div id="dashboard-area" class="start-grid container-fluid">
+							<div class="row">
+								<div class="col">1 of 3</div>
+								<div class="col">2 of 3</div>
+								<div class="col">3 of 3</div>
+							</div>
+							<div class="row">
+								<div class="col-8">1 of 3</div>
+
+								<div class="col-4">3 of 3</div>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="nav-finder"
+							role="tabpanel"
+							aria-labelledby="nav-finder-tab">
+							<div id="userData"></div>
+
+							<div id="dashboard-finder" class="container-fluid">
+								<div class="row">
+									<h6 class="text-light">Fitness Programm List:</h6>
+
+									<div class="row">
+										<div class="col-12 col-md-4">
+											<div id="course-list" class="list-group"></div>
+										</div>
+										<div class="col-12 col-md-8" id="course-info-area"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="myfitness"
+						role="tabpanel"
+						aria-labelledby="myfitness-tab">
+						Lorem Myfitness ipsum dolor sit amet consectetur adipisicing elit.
+						Quisquam sed a, iusto non ad nulla quas, vitae repellendus beatae
+						maiores architecto nobis tempora quae veniam! Voluptas quia autem
+						quam dolorum!
+					</div>
+					<div
+						class="tab-pane fade"
+						id="profil"
+						role="tabpanel"
+						aria-labelledby="profil-tab">
+						Lorem Profil ipsum dolor sit amet consectetur, adipisicing elit.
+						Commodi inventore omnis consectetur distinctio maiores iste pariatur
+						mollitia soluta, recusandae, vitae, asperiores saepe dolorem!
+						Laudantium deserunt explicabo accusamus. Magni, alias molestiae.
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="./lib/axios.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/scriptProfilArea.js"></script>
+	</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Start Seite</title>
+	</head>
+	<style></style>
+	<body class="align-middled-flex align-items-center py-4">
+		<div class="container card d-flex align-items-center py-4">
+			<img src="./images/logo.png" alt="logo" />
+			<h1 class="card-title">
+				<span>
+					WILLKOMMEN <br />IN DER FITNESS <br />
+					FINDER APP <br />
+				</span>
+			</h1>
+			<!-- Modal HTML -->
+			<div
+				class="modal fade"
+				id="exampleModal"
+				tabindex="-1"
+				aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">
+								Melden Sie sich an
+							</h5>
+							<button
+								type="button"
+								class="btn-close"
+								id="closeModalBtn"></button>
+						</div>
+						<div class="modal-body">
+							<div class="container-login-form">
+								<form
+									action="/api/users/login"
+									method="post"
+									id="login-form-el"
+									class="element">
+									<h2>Login Form</h2>
+									<div class="form-grid">
+										<label for="input_username_log">User:</label>
+										<input
+											type="text"
+											name="username"
+											id="input_username_log" />
+
+										<label for="input_password_log">Passwort:</label>
+										<input
+											type="password"
+											name="password"
+											id="input_password_log" />
+									</div>
+
+									<button type="submit" class="btn btn-primary">Login</button>
+
+									<!-- <button class="btn-info btn" id="newHere">
+										New hier? Zum Register
+									</button> -->
+								</form>
+							</div>
+
+							<div class="container-register-form">
+								<form
+									action="/api/users/register"
+									method="post"
+									id="register-form-el"
+									class="element hidden">
+									<h2>Register Form</h2>
+									<div class="bg-danger" id="errorMessageIndex"></div>
+
+									<div class="form-grid">
+										<label for="input_username_reg">User:</label>
+										<input
+											type="text"
+											name="username"
+											id="input_username_reg"
+											pattern="^[a-zA-Z0-9]{2,50}$"
+											title="Username darf nur aus 2-50 Zeichen bestehen und keine Sonderzeichen enthalten"
+											required />
+
+										<label for="input_password_reg">Passwort:</label>
+										<input
+											type="password"
+											name="password"
+											id="input_password_reg"
+											pattern="^.{8,50}$"
+											title="Passwort muss zwischen 8 und 50 Zeichen lang sein"
+											required />
+
+										<label for="input_email_reg">E-Mail:</label>
+										<input
+											type="email"
+											name="email"
+											id="input_email_reg"
+											pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8}"
+											title="Bitte geben Sie eine gültige Email-Adresse ein"
+											required />
+									</div>
+
+									<button class="btn btn-success" type="submit">
+										Registrieren
+									</button>
+								</form>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button id="newHere" class="btn btn-info">
+								Ich bin schon registriert
+							</button>
+							<button
+								type="button"
+								class="btn btn-secondary"
+								id="closeModalFooterBtn">
+								Close
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--  -->
+			<div style="width: 100%">
+				<nav class="text-end">
+					<a href="#login-form-el" id="navElem1" class="navText">LOGIN</a>
+					<a href="#register-form-el" id="navElem2" class="navText">REGISTER</a>
+				</nav>
+			</div>
+			<div class="card-body">
+				<div id="startButton" class="btn btn-primary">START</div>
+			</div>
+			<div class="row d-flex align-items-center">
+				<div class="col">
+					<img src="./images/1.jpeg" alt="Bild 1" class="img-fluid" />
+				</div>
+				<div class="col">
+					<img src="./images/3.jpg" alt="Bild 2" class="img-fluid" />
+				</div>
+			</div>
+		</div>
+
+		<script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

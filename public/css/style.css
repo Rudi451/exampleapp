@@ -1,0 +1,94 @@
+:root {
+	--swiss-coffee: #d3cfcd;
+	--bunker: #101b1b;
+	--nevada: #586e70;
+	--kabul: #56453f;
+	--coral-tree: #a2617b;
+	--granny-smith: #7d969a;
+	--plantation: #234246;
+	--kimberly: #74799d;
+	--san-juan: #2a4f61;
+	--elephant: #102f3e;
+
+	--kengoo: #c46ae7;
+}
+form {
+	width: 400px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+}
+.form-grid {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-gap: 10px;
+}
+
+.form-grid label {
+	text-align: left;
+}
+
+.form-grid input {
+	width: 100%;
+	padding: 5px;
+}
+.hidden {
+	display: none;
+}
+body {
+	height: fit-content;
+	background-image: linear-gradient(
+		to top left,
+		var(--elephant),
+		var(--bunker)
+	);
+	/* background-color: var(--elephant); */
+}
+.container {
+	/* height: 95vh; */
+	background-color: var(--nevada);
+
+	box-shadow: 2px 2px 5px var(--swiss-coffee);
+}
+.card-title {
+	color: #d3cfcd;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: bolder;
+	font-size: 3em;
+	text-align: center;
+}
+.container > img {
+	height: 6em;
+}
+.navText {
+	text-decoration: none;
+	color: #d3cfcd;
+	border: 2px solid var(--kengoo);
+	padding: 10px;
+}
+.navText:hover {
+	background-color: #2a4f61;
+}
+
+#startButton {
+	background-color: var(--san-juan);
+	font-size: 2em;
+	margin: 10px;
+}
+#startButton:hover {
+	background-color: var(--kimberly);
+}
+button {
+	margin: 10px;
+}
+.col > img {
+	height: 40vh;
+	border-radius: 9px;
+}
+.row {
+	padding-bottom: 10px;
+	border-bottom: 5px solid var(--kengoo);
+}

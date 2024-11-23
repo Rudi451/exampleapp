@@ -1,0 +1,132 @@
+[
+  {
+    "userId": "04bc4d41-6c4b-4005-81a8-94ed37533a12",
+    "username": "Rodion2",
+    "email": "rodion.shap@gmail.com",
+    "name": "",
+    "age": "",
+    "powerLevel": "",
+    "payments": [
+      {
+        "paymentId": "aff9399d-df20-444c-8e82-eeb7eda1d9b9",
+        "payed": true,
+        "date": "2024-10-22T08:37:20.180Z",
+        "courseId": "379a3319-b4a4-4bda-93a1-1868316ad01b"
+      },
+      {
+        "paymentId": "fa28a2c0-832e-42bf-8286-db13d6dd19fd",
+        "payed": true,
+        "date": "2024-10-22T08:37:35.544Z",
+        "courseId": "9a5a5898-2005-4fde-841b-60fe7a21884f"
+      }
+    ],
+    "password": "$2b$10$1akxpSjBm5dYvnrR1UXUMObi4YLhI5ekc6nRb0pjl/FlgGvtuZDfG"
+  },
+  {
+    "userId": "786dcdcf-f496-43ca-b448-a73561a34623",
+    "username": "Rodion23",
+    "email": "rodion.shap@gmail.com",
+    "name": "",
+    "age": "",
+    "powerLevel": "",
+    "payments": [
+      {
+        "paymentId": "73b9c778-50b9-4b2b-88d9-4bfffb4cb187",
+        "payed": true,
+        "date": "2024-10-22T09:17:01.096Z",
+        "courseId": "379a3319-b4a4-4bda-93a1-1868316ad01b"
+      }
+    ],
+    "password": "$2b$10$OqCLrTkyqOUyWHfe/cM2y.TGVZWnrGQNO4eYmSHktnq35TzoA6zm2"
+  },
+  {
+    "userId": "aa5398ae-4f24-4032-bb3f-96732f80cbc8",
+    "username": "danil",
+    "email": "aa@cc.com",
+    "name": "",
+    "age": "",
+    "powerLevel": "",
+    "payments": [],
+    "password": "$2b$10$YguDE0qKkrbBrKy/BdDJjO6jBRfXJUvO5qUGk8w/stgsV2FwNNtna"
+  },
+  {
+    "userId": "8320aff6-323d-423b-9b3c-6b4f52d539e9",
+    "username": "danil432",
+    "email": "qq@gg.com",
+    "name": "",
+    "age": "",
+    "powerLevel": "",
+    "payments": [],
+    "password": "$2b$10$DctYRM.W7TqoHb9AKdqSleCRhLJQC3WGwZ8/QSfKN0yMsOb2HpkjW"
+  },
+  {
+    "userId": "f2d9f808-9f62-41a7-98c1-8d1a1f64cb58",
+    "username": "danil12345678",
+    "email": "rodion.shap@gmail.com",
+    "name": "",
+    "age": "",
+    "powerLevel": "",
+    "payments": [],
+    "password": "$2b$10$Qt/wJ5/KYWf/1IIOcpSFj.sLNSkaicyBrm/dwQ53EzoqJ5EwK38wG"
+  },
+  {
+    "userId": "9c5c96c1-7cae-41c1-9a3a-bf9123cca49e",
+    "username": "danil657",
+    "email": "rodion.shap@gmail.com",
+    "name": "",
+    "age": "",
+    "powerLevel": "",
+    "payments": [],
+    "password": "$2b$10$YpNM5g1/r5J.RDakEeHgv.Lnt3ZQNFg1skeYN2wrNlhLjRlrcUiHO"
+  },
+  {
+    "userId": "196f51a1-ae17-40d5-8d77-5e4bc376d447",
+    "username": "test356789",
+    "password": "$2b$10$ENy.W9fdi7HPVEb0hsBV1uj71EleIe0oEjp0ZyCeYCXXQuDYpwsdO",
+    "email": "",
+    "name": "",
+    "age": "",
+    "powerLevel": "",
+    "payments": []
+  },
+  {
+    "userId": "80206ef9-7b75-4955-95c1-82d6171a24d8",
+    "username": "danil765",
+    "email": "rodion.shap@gmail.com",
+    "name": "",
+    "age": "",
+    "powerLevel": "",
+    "payments": [
+      {
+        "paymentId": "380e639f-1ba4-40ee-836f-c74044b12029",
+        "payed": true,
+        "date": "2024-10-24T18:24:01.092Z",
+        "courseId": "8f33c6b2-0ead-411c-94f0-0cbe8cda07a5"
+      }
+    ],
+    "password": "$2b$10$lgwPXJ.wp5C9egvf2IcrZe5affIDmwjDZ7aSEt6zZPGuPN7275xv2"
+  },
+  {
+    "userId": "4963609a-8142-4124-b1cb-7742151b6cf4",
+    "username": "Danil",
+    "email": "rodion.shap@gmail.com",
+    "name": "",
+    "age": "",
+    "powerLevel": "",
+    "payments": [
+      {
+        "paymentId": "892dc4a0-d8a6-49f7-8571-5f5d5e49dacb",
+        "payed": true,
+        "date": "2024-10-25T09:55:35.253Z",
+        "courseId": "f3ac9e7f-a3cd-4c2e-84c7-6b77c46172cd"
+      },
+      {
+        "paymentId": "5801ac1e-99b6-40c8-8644-166bf199d4c9",
+        "payed": true,
+        "date": "2024-10-25T09:56:08.271Z",
+        "courseId": "19c57ee7-b6f5-4f9f-8c7e-7dbab255dd2f"
+      }
+    ],
+    "password": "$2b$10$p7iSMCBzn/cVCw9ndVvNQurbbdCQCKVrTaF7FpNG1N2EqV9slKJqS"
+  }
+]
