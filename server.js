@@ -18,15 +18,15 @@ const KEY_PATH = path.join(process.cwd(), 'cert', 'privkey.pem');
 const CERT_PATH = path.join(process.cwd(), 'cert', 'fullchain.pem');
 
 // Die einstellungen für's hosten
-try {
-	const options = {
-		key: await fs.readFile(KEY_PATH),
-		cert: await fs.readFile(CERT_PATH),
-	};
-	const httpServer = https.createServer(options, app);
-} catch (err) {
-	console.log(err);
-}
+// try {
+// 	const options = {
+// 		key: await fs.readFile(KEY_PATH),
+// 		cert: await fs.readFile(CERT_PATH),
+// 	};
+// 	const httpServer = https.createServer(options, app);
+// } catch (err) {
+// 	console.log(err);
+// }
 
 app.use(serverSetup);
 const PORT = process.env.PORT || 5000;
@@ -109,11 +109,11 @@ app.use((error, req, res, next) => {
 //
 // Webserver erzeugen / starten
 // //
-// app.listen(PORT, () => {
-// 	// generateFitnessCourses();
-// 	console.log('Server is running with port ' + PORT);
-// });
-
-httpServer.listen(443, () => {
-	console.log('Server listening on port 443');
+app.listen(PORT, () => {
+	// generateFitnessCourses();
+	console.log('Server is running with port ' + PORT);
 });
+
+// httpServer.listen(443, () => {
+// 	console.log('Server listening on port 443');
+// });
