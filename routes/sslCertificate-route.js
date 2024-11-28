@@ -1,6 +1,6 @@
 import {Router} from 'express';
 
-router = new Router();
+const router = new Router();
 
 router.get('/', (req, res, next) => {
 	const fileName = 'a-string';
