@@ -17,7 +17,7 @@ import {generateFitnessCourses} from './utils/daten-faken.js';
 const app = express();
 const KEY_PATH = path.join(process.cwd(), 'cert', 'privkey.pem');
 const CERT_PATH = path.join(process.cwd(), 'cert', 'fullchain.pem');
-
+const __dirname = process.cwd();
 // Die einstellungen für's hosten
 // try {
 // 	const options = {
