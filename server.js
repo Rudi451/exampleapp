@@ -75,6 +75,7 @@ app.use('/api/users', routerGuest);
 app.use(express.static(__dirname, {dotfiles: 'allow'})); //
 app.use(express.static('.well-known/acme-challenge'));
 
+app.use('/.well-known', express.static('/home/rodion_shap/exampleapp/cert'));
 // app.use(express.static('/.well-known'));
 // app.use(
 // 	'/.well-known/acme-challenge/cLe-dvx1haBae9-Ak-lrdYNMUtWHA0AB1kAysxG-tn0',
