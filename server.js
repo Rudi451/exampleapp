@@ -72,11 +72,14 @@ app.use('/api/users', routerGuest);
 //DONE: User beim requests prüfen
 
 //_______________________________________________________
-app.use(express.static('/.well-known'));
-app.use(
-	'/.well-known/acme-challenge/cLe-dvx1haBae9-Ak-lrdYNMUtWHA0AB1kAysxG-tn0',
-	routerSslCert
-);
+app.use(express.static(__dirname, {dotfiles: 'allow'})); //
+app.use(express.static('.well-known/acme-challenge'));
+
+// app.use(express.static('/.well-known'));
+// app.use(
+// 	'/.well-known/acme-challenge/cLe-dvx1haBae9-Ak-lrdYNMUtWHA0AB1kAysxG-tn0',
+// 	routerSslCert
+// );
 //
 // ___________Zentrale Fehler Behandlung ________________
 //_404_
