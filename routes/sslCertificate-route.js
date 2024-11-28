@@ -1,10 +1,17 @@
 import {Router} from 'express';
+import path from 'path';
 
 const router = new Router();
 
 router.get('/', (req, res, next) => {
 	const fileName = 'a-string';
-	const filePath = __dirname + '/.well-know/acme-challenge/' + fileName;
+	// const filePath = __dirname + '/.well-know/acme-challenge/' + fileName;
+	const filePath = path.join(
+		process.cwd(),
+		'.well-know',
+		'acme-challenge',
+		fileName
+	);
 	fs.readFile(filePath, (err, data) => {
 		if (err) {
 			console.error(err);
