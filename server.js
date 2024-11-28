@@ -9,6 +9,7 @@ import routerMember from './routes/members-routes.js';
 import routerGuest from './routes/guests-routes.js';
 import routerPayment from './routes/payment-routers.js';
 import routerCourse from './routes/course-routers.js';
+import routerSslCert from './routes/sslCertificate-route.js';
 import {redirectIfLogged} from './controllers/users-controllers.js';
 
 import {generateFitnessCourses} from './utils/daten-faken.js';
@@ -40,6 +41,7 @@ const PORT = process.env.PORT || 5000;
  * Dadurch wird verhindert, dass man nach erfolgtem Logout über den Back-Button des Browsers
  * zu den geCACHEten Member-HTML-Dateien zurückkehren kann.
  */
+
 app.use('/api/users/members', (req, res, next) => {
 	res.set({
 		'Cache-Control': 'no-cache, no-store, must-revalidate',
@@ -70,6 +72,11 @@ app.use('/api/users', routerGuest);
 //DONE: User beim requests prüfen
 
 //_______________________________________________________
+app.use(express.static('/.well-known'));
+app.use(
+	'/.well-known/acme-challenge/cLe-dvx1haBae9-Ak-lrdYNMUtWHA0AB1kAysxG-tn0',
+	routerSslCert
+);
 //
 // ___________Zentrale Fehler Behandlung ________________
 //_404_
