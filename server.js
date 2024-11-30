@@ -31,7 +31,7 @@ const __dirname = process.cwd();
 
 app.use(serverSetup);
 // const PORT = process.env.PORT || 5000;
-const PORT = 80;
+const PORT = 8080;
 
 //////////////////////////////////////////////////
 //  Geschützter Member Bereich
@@ -74,9 +74,15 @@ app.use('/api/users', routerGuest);
 
 //_______________________________________________________
 app.use(express.static(__dirname, {dotfiles: 'allow'})); //
-app.use(express.static('.well-known/acme-challenge'));
+app.use(express.static(path.join(__dirname, '.well-known/acme-challenge')));
 
-app.use('/.well-known', express.static('/home/rodion_shap/exampleapp/cert'));
+// Serve ACME challenge files
+app.use(
+	'/.well-known/acme-challenge',
+	express.static(path.join(__dirname, '.well-known/acme-challenge'))
+);
+
+// app.use('/.well-known', express.static('/home/rodion_shap/exampleapp/cert'));
 // app.use(express.static('/.well-known'));
 // app.use(
 // 	'/.well-known/acme-challenge/cLe-dvx1haBae9-Ak-lrdYNMUtWHA0AB1kAysxG-tn0',
