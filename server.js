@@ -38,6 +38,10 @@ const options = {
 	ca: fs.readFileSync(CA_PATH),
 };
 
+app.get('/', (req, res) => {
+	res.send('Hi');
+});
+
 // Starte den HTTPS-Server
 https.createServer(options, app).listen(7001, () => {
 	console.log('Server läuft auf https://my-yoga.work');
