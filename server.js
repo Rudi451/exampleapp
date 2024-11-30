@@ -35,6 +35,7 @@ const CA_PATH = path.join(process.cwd(), 'cert', 'my-yoga.work', 'chain.crt');
 const options = {
 	key: fs.readFileSync(KEY_PATH),
 	cert: fs.readFileSync(CERT_PATH),
+	ca: fs.readFileSync(CA_PATH),
 };
 
 // Starte den HTTPS-Server
