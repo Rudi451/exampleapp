@@ -30,16 +30,16 @@ httpServer.listen(8080, () => {
 const KEY_PATH = path.join(
 	process.cwd(),
 	'cert',
-	'my-yoga.work',
+
 	'my-yoga.work.key'
 );
 const CERT_PATH = path.join(
 	process.cwd(),
 	'cert',
-	'my-yoga.work',
-	'my-yoga.work.crt'
+
+	'my-yoga.work.cer'
 );
-const CA_PATH = path.join(process.cwd(), 'cert', 'my-yoga.work', 'chain.crt');
+const CA_PATH = path.join(process.cwd(), 'cert', 'ca.cer');
 // Lade das Zertifikat, den privaten Schlüssel und das Zwischenzertifikat
 const options = {
 	key: fs.readFileSync(KEY_PATH),
