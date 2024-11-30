@@ -30,7 +30,8 @@ const __dirname = process.cwd();
 // }
 
 app.use(serverSetup);
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
+const PORT = 80;
 
 //////////////////////////////////////////////////
 //  Geschützter Member Bereich
