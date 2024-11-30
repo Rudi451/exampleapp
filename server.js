@@ -21,7 +21,12 @@ const KEY_PATH = path.join(
 	'my-yoga.work',
 	'my-yoga.work.key'
 );
-const CERT_PATH = path.join(process.cwd(), 'cert', 'my-yoga.work.crt');
+const CERT_PATH = path.join(
+	process.cwd(),
+	'cert',
+	'my-yoga.work',
+	'my-yoga.work.crt'
+);
 const __dirname = process.cwd();
 // Die einstellungen für's hosten
 
