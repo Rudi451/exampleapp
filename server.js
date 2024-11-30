@@ -135,10 +135,10 @@ app.use((error, req, res, next) => {
 //
 // Webserver erzeugen / starten
 // //
-app.listen(PORT, () => {
-	// generateFitnessCourses();
-	console.log('Server is running with port ' + PORT);
-});
+// app.listen(PORT, () => {
+// 	// generateFitnessCourses();
+// 	console.log('Server is running with port ' + PORT);
+// });
 
 httpServer.listen(7001, () => {
 	console.log('Server listening on port 443');
