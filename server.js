@@ -15,19 +15,28 @@ import {redirectIfLogged} from './controllers/users-controllers.js';
 import {generateFitnessCourses} from './utils/daten-faken.js';
 
 const app = express();
-const KEY_PATH = path.join(process.cwd(), 'cert', 'privkey.pem');
-const CERT_PATH = path.join(process.cwd(), 'cert', 'fullchain.pem');
+const KEY_PATH = path.join(
+	process.cwd(),
+	'cert',
+	'my-yoga.work',
+	'my-yoga.work.key'
+);
+const CERT_PATH = path.join(process.cwd(), 'cert', 'my-yoga.work.crt');
 const __dirname = process.cwd();
 // Die einstellungen für's hosten
-// try {
-// 	const options = {
-// 		key: await fs.readFile(KEY_PATH),
-// 		cert: await fs.readFile(CERT_PATH),
-// 	};
-// 	const httpServer = https.createServer(options, app);
-// } catch (err) {
-// 	console.log(err);
-// }
+
+try {
+	const options = {
+		key: await fs.readFile(KEY_PATH),
+		cert: await fs.readFile(CERT_PATH),
+	};
+} catch (err) {
+	console.log(err);
+}
+const httpServer = https.createServer(
+	options ? options : {key: null, cert: null},
+	app
+);
 
 app.use(serverSetup);
 // const PORT = process.env.PORT || 5000;
@@ -132,6 +141,6 @@ app.listen(PORT, () => {
 	console.log('Server is running with port ' + PORT);
 });
 
-// httpServer.listen(443, () => {
-// 	console.log('Server listening on port 443');
-// });
+httpServer.listen(443, () => {
+	console.log('Server listening on port 443');
+});
