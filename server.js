@@ -30,6 +30,7 @@ const CERT_PATH = path.join(
 	'my-yoga.work',
 	'my-yoga.work.crt'
 );
+const CA_PATH = path.join(process.cwd(), 'cert', 'my-yoga.work', 'chain.crt');
 // Lade das Zertifikat, den privaten Schlüssel und das Zwischenzertifikat
 const options = {
 	key: fs.readFileSync(KEY_PATH),
