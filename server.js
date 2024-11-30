@@ -25,14 +25,11 @@ const CERT_PATH = path.join(process.cwd(), 'cert', 'my-yoga.work.crt');
 const __dirname = process.cwd();
 // Die einstellungen für's hosten
 
-try {
-	const options = {
-		key: await fs.readFile(KEY_PATH),
-		cert: await fs.readFile(CERT_PATH),
-	};
-} catch (err) {
-	console.log(err);
-}
+const options = {
+	key: await fs.readFile(KEY_PATH),
+	cert: await fs.readFile(CERT_PATH),
+};
+
 const httpServer = https.createServer(
 	options ? options : {key: null, cert: null},
 	app
