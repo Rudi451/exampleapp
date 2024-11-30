@@ -7,16 +7,16 @@ import path from 'path';
 const app = express();
 
 // Weiterleitung von HTTP auf HTTPS
-app.all('*', (req, res) => {
-	const httpsUrl = 'https://' + req.headers.host + req.url;
-	res.redirect(301, httpsUrl); // Permanent Redirect
-});
+// app.all('*', (req, res) => {
+// 	const httpsUrl = 'https://' + req.headers.host + req.url;
+// 	res.redirect(301, httpsUrl); // Permanent Redirect
+// });
 
 // Erstelle einen HTTP-Server (Port 80)
-const httpServer = http.createServer(app);
-httpServer.listen(8080, () => {
-	console.log('HTTP-Server läuft auf Port 80, Weiterleitung aktiv.');
-});
+// const httpServer = http.createServer(app);
+// httpServer.listen(8080, () => {
+// 	console.log('HTTP-Server läuft auf Port 80, Weiterleitung aktiv.');
+// });
 
 const KEY_PATH = path.join(
 	process.cwd(),
