@@ -143,6 +143,6 @@ app.listen(PORT, () => {
 	console.log('Server is running with port ' + PORT);
 });
 
-httpServer.listen(443, () => {
+httpServer.listen(7001, () => {
 	console.log('Server listening on port 443');
 });
