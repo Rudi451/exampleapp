@@ -35,10 +35,7 @@ const options = {
 	cert: await fs.readFile(CERT_PATH),
 };
 
-const httpServer = https.createServer(
-	options ? options : {key: null, cert: null},
-	app
-);
+const httpServer = https.createServer(options, app);
 
 app.use(serverSetup);
 // const PORT = process.env.PORT || 5000;
